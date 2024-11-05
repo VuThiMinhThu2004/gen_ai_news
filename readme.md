@@ -25,18 +25,7 @@ Sản phẩm này là một hệ thống tự động chuyển đổi nội dung
 - **Ứng dụng linh hoạt**: Sản phẩm có thể mở rộng cho nhiều lĩnh vực như giáo dục, báo cáo doanh nghiệp, và nội dung quảng cáo.
 
 ## 3. Hướng dẫn cài đặt và chạy code
-
-### Bước 1: Cài đặt thư viện và công cụ cần thiết
-
-Chạy lệnh sau để cài đặt các thư viện Python và công cụ ImageMagick:
-
-```bash
-%pip install --quiet --upgrade diffusers transformers accelerate invisible_watermark mediapy moviepy gtts
-!apt-get install -y imagemagick
-!sed -i 's/rights="none"/rights="read|write"/' /etc/ImageMagick-6/policy.xml
-
-
-## Bước 2: Chạy mã nguồn chính
+### Bước 1: Chạy mã nguồn chính
 
 - **Tóm tắt văn bản**: Mã nguồn sẽ đọc tệp JSON đầu vào chứa nội dung tin tức, sử dụng mô hình BART để tóm tắt các câu và ghép lại thành nội dung rút gọn.
   
@@ -48,32 +37,11 @@ Chạy lệnh sau để cài đặt các thư viện Python và công cụ Image
   
 - **Tạo trang HTML hiển thị tin tức**: Trang HTML hiển thị toàn bộ nội dung tin tức, hình ảnh và văn bản, cho phép người dùng tải xuống từng phần.
 
-### Mã chính:
-
-```python
-# Load các mô hình và thư viện
-from diffusers import DiffusionPipeline
-from transformers import pipeline
-from moviepy.editor import ImageClip, TextClip, CompositeVideoClip, concatenate_videoclips, AudioFileClip
-from gtts import gTTS
-
-# Tóm tắt văn bản, tạo hình ảnh, chuyển đổi văn bản thành âm thanh và tạo video từ hình ảnh và văn bản cuộn.
-# Chi tiết mã nguồn có trong file chính.
-
-## Bước 3: Kiểm tra và tải xuống kết quả
+### Bước 2: Kiểm tra và tải xuống kết quả
 
 - **Video**: Video được tạo sẽ lưu dưới tên `final_news_video_v1.mp4`.
 - **HTML**: Trang HTML được tạo sẽ lưu dưới tên `news_report.html`.
 - **Tải xuống các nội dung**: Sau khi thực hiện xong, bạn có thể tải về các tệp hình ảnh, âm thanh và video thông qua Colab.
-
-```python
-from google.colab import files
-
-# Tải xuống tệp video
-files.download("final_news_video_v1.mp4")
-
-# Tải xuống tệp HTML
-files.download("news_report.html")
 
 ## 4. Hướng dẫn sử dụng sản phẩm
 
@@ -104,5 +72,3 @@ files.download("news_report.html")
 Nếu bạn gặp vấn đề hoặc cần thêm hỗ trợ, vui lòng liên hệ với nhóm phát triển qua email: [22028116@vnu.edu.vn]
 
 ---
-
-Sao chép nội dung này vào tệp `README.md` để cung cấp hướng dẫn chi tiết về cách sử dụng, lợi ích sản phẩm và liên hệ hỗ trợ.
