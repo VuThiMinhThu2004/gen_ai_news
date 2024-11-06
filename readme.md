@@ -67,7 +67,10 @@ Sản phẩm này là một hệ thống tự động chuyển đổi nội dung
 
 - **Tùy chỉnh và mở rộng dễ dàng**: Cấu trúc của sản phẩm cho phép tùy chỉnh và mở rộng để phục vụ cho nhiều lĩnh vực khác nhau như giáo dục, trợ lý ảo, và báo cáo kinh doanh. Sản phẩm có thể điều chỉnh để phù hợp với từng mục đích sử dụng.
 
-## 6. Liên hệ và hỗ trợ
+## 6. Demo sản phẩm
+- **Link demo sản phẩm**: https://youtu.be/y9ueuVgEzSM?si=atP5QGUxEnrdJHX3
+
+## 7. Liên hệ và hỗ trợ
 
 Nếu bạn gặp vấn đề hoặc cần thêm hỗ trợ, vui lòng liên hệ với nhóm phát triển qua email: [22028116@vnu.edu.vn]
 
